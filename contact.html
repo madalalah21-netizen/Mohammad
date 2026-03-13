@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - Mohammad Abdullah Dalal'ah</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function validateForm(){
+  var name=document.forms["form"]["name"].value;
+  var email=document.forms["form"]["email"].value;
+  var country=document.forms["form"]["country"].value;
+  var comment=document.forms["form"]["comment"].value;
+
+  if(name=="" || email=="" || country=="" || comment==""){
+    alert("Please fill all fields");
+    return false;
+  }
+  alert("Form submitted successfully!");
+  return true;
+}
+</script>
+</head>
+<body>
+
+<header>
+  <h1 class="name">Mohammad Abdullah Dalal'ah</h1>
+  <p>Cybersecurity Student | Fourth Year</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="certificates.html">Certificates</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <h2>Contact Me</h2>
+  <form name="form" onsubmit="return validateForm()">
+    <input type="text" name="name" placeholder="Full Name"><br>
+    <input type="email" name="email" placeholder="Email"><br>
+    <input type="text" name="country" placeholder="Country"><br>
+    <textarea name="comment" placeholder="Your comments"></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<footer>
+  <p>© 2026 Mohammad Abdullah Dalal'ah</p>
+  <p>Cybersecurity Portfolio</p>
+</footer>
+
+</body>
+</html>

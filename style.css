@@ -1,0 +1,189 @@
+/* ===== GENERAL PAGE STYLE ===== */
+body{
+  font-family: Arial, sans-serif;
+  background:#0f1624;  /* Dark background */
+  color:#ccd6f6;
+  margin:0;
+  text-align:center;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:#0a192f;
+  color:white;
+  padding:20px;
+}
+
+.name{
+  font-size:40px;
+  color:#64ffda;
+  letter-spacing:2px;
+}
+
+/* ===== NAVIGATION MENU ===== */
+nav{
+  background:#112240;
+  padding:10px;
+}
+
+nav a{
+  color:white;
+  margin:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#64ffda;
+}
+
+/* ===== CONTENT ===== */
+.container{
+  padding:20px;
+  max-width:1200px;
+  margin:auto;
+  text-align:left;
+}
+
+/* ===== PROFILE PHOTO ===== */
+img.profile{
+  width:200px;
+  border-radius:50%;
+  border:4px solid #64ffda;
+  margin:15px auto;
+  display:block;
+}
+
+/* ===== TABLE ===== */
+table{
+  margin:auto;
+  border-collapse:collapse;
+  width:90%;
+  max-width:700px;
+}
+
+table, th, td{
+  border:1px solid #444;
+  padding:10px;
+}
+
+th{
+  background:#0a192f;
+  color:white;
+}
+
+/* ===== FORM ===== */
+input, textarea{
+  width:80%;
+  max-width:400px;
+  padding:10px;
+  margin:8px;
+  border-radius:5px;
+  border:none;
+}
+
+button{
+  background:#0a192f;
+  color:white;
+  padding:10px 20px;
+  border:none;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+button:hover{
+  background:#64ffda;
+  color:black;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#0a192f;
+  color:white;
+  padding:15px;
+  margin-top:40px;
+}
+
+/* ===== CERTIFICATES GALLERY ===== */
+.cert-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  padding:20px;
+}
+
+.cert-card{
+  background:#112240;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.4);
+  width:300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color:#ccd6f6;
+}
+
+.cert-card:hover{
+  transform: translateY(-10px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.6);
+}
+
+.cert-card img{
+  width:100%;
+  border-radius:5px;
+}
+
+.cert-card h3{
+  margin-top:10px;
+  font-size:18px;
+  color:#64ffda;
+  text-align:center;
+}
+
+/* ===== HEADINGS ===== */
+h2{
+  color:#64ffda;
+  margin-top:30px;
+  text-align:center;
+}
+
+/* ===== LISTS ===== */
+ul{
+  list-style-type: square;
+  padding-left:40px;
+}
+
+li{
+  margin-bottom:8px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width:900px){
+  .container{
+    padding:15px;
+  }
+  img.profile{
+    width:150px;
+  }
+  table{
+    width:100%;
+  }
+  .cert-card{
+    width:45%;
+  }
+}
+
+@media (max-width:600px){
+  .name{
+    font-size:30px;
+  }
+  img.profile{
+    width:120px;
+  }
+  .cert-card{
+    width:90%;
+  }
+  input, textarea{
+    width:90%;
+  }
+}
